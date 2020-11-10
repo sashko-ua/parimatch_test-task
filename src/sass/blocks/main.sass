@@ -1,0 +1,58 @@
+.main
+    position: relative
+    background: url(../img/main_bg.jpg) center center/cover no-repeat
+    height: 100vh
+    width: 100vw
+    overflow: hidden
+    &__img-wrapper
+        position: relative
+        width: 635px
+        height: 100vh
+        margin: 0 auto
+
+    &__img-outside
+        position: absolute
+        bottom: -55px
+        left: -25px
+        width: 100%
+        z-index: 2
+
+    &__img-inside
+        position: absolute
+        width: 79%
+        bottom: 98px
+        left: 41px
+        z-index: 1
+
+    &__circle
+        position: absolute
+        bottom: 268px
+        left: 210px
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        border-radius: 100%
+        width: 165px
+        height: 165px
+        background-color: transparent
+        cursor: pointer
+        z-index: 3
+
+        font-style: italic
+        font-weight: bold
+        font-size: 38px
+        line-height: 24px
+        text-align: center
+        text-transform: uppercase
+
+        color: #000000
+        &:hover
+            box-shadow: 0 0 15px $yellow
+
+    &__smoke
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: 5
